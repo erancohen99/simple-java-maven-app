@@ -6,8 +6,11 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "Hello World!";
-
+    private String message = "Jenkins pipe test";
+	private String message2 = "Run tests with stage";
+	private String message3 = "code change_1";
+	private String message4 = "code change_2";
+	  
     public App() {}
 
     public static void main(String[] args) {
@@ -15,6 +18,7 @@ public class App
     }
 
     private final String getMessage() {
+		//message = message + " " + message2;
         return message;
     }
 

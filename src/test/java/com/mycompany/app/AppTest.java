@@ -32,7 +32,7 @@ public class AppTest
     @Test
     public void testAppMain()
     {
-		Assume.assumeFalse(System.getProperty("os.name").contains("Windows"));
+		//Assume.assumeFalse(System.getProperty("os.name").contains("Windows"));
         App.main(null);
         try {
             assertEquals("Jenkins pipe test" + System.getProperty("line.separator"), outContent.toString());

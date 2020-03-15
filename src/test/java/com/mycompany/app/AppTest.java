@@ -35,7 +35,7 @@ public class AppTest
         App.main(null);
         try {
             assertEquals("Jenkins pipe test" + System.getProperty("line.separator"), outContent.toString());
-			Assume.assumeFalse(System.getProperty("os.name").contains("Linux"));
+			assumeFalse(System.getProperty("os.name").contains("Linux"));
         } catch (AssertionError e) {
             fail("\"message\" is not \"Jenkins pipe test\"");
         }

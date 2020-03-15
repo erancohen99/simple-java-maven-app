@@ -32,10 +32,10 @@ public class AppTest
     @Test
     public void testAppMain()
     {
+		Assume.assumeFalse(System.getProperty("os.name").contains("Windows"));
         App.main(null);
         try {
             assertEquals("Jenkins pipe test" + System.getProperty("line.separator"), outContent.toString());
-			assumeFalse(System.getProperty("os.name").contains("Windows"));
         } catch (AssertionError e) {
             fail("\"message\" is not \"Jenkins pipe test\"");
         }
